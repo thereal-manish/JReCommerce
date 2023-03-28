@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keywordspec name="ExperimentalLibrary" type="library" format="ROBOT" generated="20230328 11:58:11">
+<version></version>
+<scope>global</scope>
+<namedargs>yes</namedargs>
+<doc>Documentation for library ``ExperimentalLibrary``.</doc>
+<kw name="Exception">
+<arguments>
+<arg>msg</arg>
+<arg>*args</arg>
+<arg>exc_info=True</arg>
+<arg>**kwargs</arg>
+</arguments>
+<doc>Log a message with severity 'ERROR' on the root logger, with exception
+information. If the logger has no handlers, basicConfig() is called to add
+a console handler with a pre-defined format.</doc>
+<tags>
+</tags>
+</kw>
+</keywordspec>
