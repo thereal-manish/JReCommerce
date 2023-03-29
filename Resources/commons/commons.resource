@@ -14,7 +14,7 @@ ${displayname}
 ${description}  
 ${productname} 
 ${metatitle}   
-${model} 
+${model}
 
 *** Keywords ***
 setup the browser
@@ -26,6 +26,7 @@ setup the browser
     ${excludeSwitches}=    Create List    enable-automation
     Call Method    ${options}    add_experimental_option    excludeSwitches    ${excludeSwitches}
     Call Method    ${options}    add_argument    --start-maximized
+    Call Method    ${options}    add_argument    --incognito
     Call Method    ${options}    add_argument    --profile-directory\=Default
     
     # Call Method    ${options}    add_argument    --disable-web-security

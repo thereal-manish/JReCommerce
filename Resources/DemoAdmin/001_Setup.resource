@@ -42,8 +42,8 @@ verify categories
 verify products across all page
     commons.Click Element    ${admin_catalog}
     commons.Click Element    ${admin_products}
-    @{allProducts}=    Create List    	Boys Kurta Pajama    Girls Lehenga Choli    	Gold plated jewelry set    Jewelry    The Lyra Pendant    Wholesale Product (Read description below)	
-    ${values}=    create list    56    50    60    48    61    28
+    @{allProducts}=    Create List    	Boys Kurta Pajama    Girls Lehenga Choli   Jewelry    The Lyra Pendant    Wholesale Product (Read description below)	
+    ${values}=    create list    56    50   48    61    28
     ExperimentalLibrary.iteratePage.Iterate Through Values    ${allProducts}    ${values}
     commons.Click Element    ${deletebtn}
     Handle Alert    ACCEPT

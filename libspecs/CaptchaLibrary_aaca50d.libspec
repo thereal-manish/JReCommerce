@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keywordspec name="CaptchaLibrary" type="LIBRARY" format="ROBOT" scope="GLOBAL" generated="2023-03-29T12:42:06+00:00" specversion="4" source="C:\Users\mani3359\AppData\Local\Programs\Python\Python37\Lib\site-packages\CaptchaLibrary\__init__.py" lineno="33">
+<version>0.7.1</version>
+<doc>``CaptchaLibrary`` is a Robot Framework Test Library         for decoding captchas.
+
+This document explains the usage of each keywords in this test library.
+For more information about Robot Framework, see http://robotframework.org
+
+== About ==
+
+Created: 23/09/2019 PST
+
+Author: Joshua Kim Rivera | joshua.rivera@mnltechnology.com
+
+Company: Spiralworks Technologies Inc.</doc>
+<tags>
+</tags>
+<inits>
+<init name="__init__" source="C:\Users\mani3359\AppData\Local\Programs\Python\Python37\Lib\site-packages\CaptchaLibrary\CaptchaLibrary.py" lineno="52">
+<arguments repr="TC_API_KEY=None, serviceUrl=None, header={'Content-Type': 'application/x-www-form-urlencoded'}, payloadType=base64Captcha">
+<arg kind="POSITIONAL_OR_NAMED" required="false" repr="TC_API_KEY=None">
+<name>TC_API_KEY</name>
+<default>None</default>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="false" repr="serviceUrl=None">
+<name>serviceUrl</name>
+<default>None</default>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="false" repr="header={'Content-Type': 'application/x-www-form-urlencoded'}">
+<name>header</name>
+<default>{'Content-Type': 'application/x-www-form-urlencoded'}</default>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="false" repr="payloadType=base64Captcha">
+<name>payloadType</name>
+<default>base64Captcha</default>
+</arg>
+</arguments>
+<doc>CaptchaLibrary requires that you provide the captcha service's url             upon import.
+
+- ``serviceUrl``:
+    The Captcha URL Service.
+- ``header``
+    (optional) default = Content-Type=application/x-www-form-urlencoded
+- ``payloadType``:
+    (optional) default = base64Captcha</doc>
+<shortdoc>CaptchaLibrary requires that you provide the captcha service's url             upon import.</shortdoc>
+</init>
+</inits>
+<keywords>
+<kw name="Capture Element From Screenshot" source="C:\Users\mani3359\AppData\Local\Programs\Python\Python37\Lib\site-packages\CaptchaLibrary\utils\Img.py" lineno="33">
+<arguments repr="imagepath, location, size, outputpath">
+<arg kind="POSITIONAL_OR_NAMED" required="true" repr="imagepath">
+<name>imagepath</name>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="true" repr="location">
+<name>location</name>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="true" repr="size">
+<name>size</name>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="true" repr="outputpath">
+<name>outputpath</name>
+</arg>
+</arguments>
+<doc>Crops the specified element from a screenshot given the             location and size using Python's Pillow Module. Fails if                 the supplied image PATH does not exist.
+
+Example:
+| `Capture Element From Screenshot` | image.png | ${coordinates} |             ${size} | output.jpg |
+
+Where:
+ - `image.png`       = path to the captcha image
+ - `${coordinates}`  = element location, must be a dictionary
+ - `${size}`         = element size, must be a dictionary
+ - `outputpath`      = cropped_image</doc>
+<shortdoc>Crops the specified element from a screenshot given the             location and size using Python's Pillow Module. Fails if                 the supplied image PATH does not exist.</shortdoc>
+</kw>
+<kw name="Convert Captcha Image To Base64" source="C:\Users\mani3359\AppData\Local\Programs\Python\Python37\Lib\site-packages\CaptchaLibrary\utils\EncDec.py" lineno="35">
+<arguments repr="imagepath">
+<arg kind="POSITIONAL_OR_NAMED" required="true" repr="imagepath">
+<name>imagepath</name>
+</arg>
+</arguments>
+<doc>Converts the supplied Captcha image to a Base64 String.
+Fails if the image does not exist
+Example:
+| `Convert Captcha Image To Base64` | captcha.png |
+
+Where:
+ - `captcha.png` = the captcha image to be converted to              Base64 String.</doc>
+<shortdoc>Converts the supplied Captcha image to a Base64 String. Fails if the image does not exist Example: | `Convert Captcha Image To Base64` | captcha.png |</shortdoc>
+</kw>
+<kw name="Create Qr Image" source="C:\Users\mani3359\AppData\Local\Programs\Python\Python37\Lib\site-packages\CaptchaLibrary\utils\EncDec.py" lineno="54">
+<arguments repr="content, outputPath, scale=6, **kwargs">
+<arg kind="POSITIONAL_OR_NAMED" required="true" repr="content">
+<name>content</name>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="true" repr="outputPath">
+<name>outputPath</name>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="false" repr="scale=6">
+<name>scale</name>
+<default>6</default>
+</arg>
+<arg kind="VAR_NAMED" required="false" repr="**kwargs">
+<name>kwargs</name>
+</arg>
+</arguments>
+<doc>Creates a QR Image given parameters.</doc>
+<shortdoc>Creates a QR Image given parameters.</shortdoc>
+</kw>
+<kw name="Decode Base64 Captcha" source="C:\Users\mani3359\AppData\Local\Programs\Python\Python37\Lib\site-packages\CaptchaLibrary\services\forgotcaptcha\ForgotCaptcha.py" lineno="38">
+<arguments repr="imagepath">
+<arg kind="POSITIONAL_OR_NAMED" required="true" repr="imagepath">
+<name>imagepath</name>
+</arg>
+</arguments>
+<doc>Decodes the Base64 Captcha Image by converting the supplied             captcha image by sending a request to the captcha service URL.
+Example:
+| ${captcha_string} | `Decode Base64 Captcha`             | path/to/captcha/image |</doc>
+<shortdoc>Decodes the Base64 Captcha Image by converting the supplied             captcha image by sending a request to the captcha service URL. Example: | ${captcha_string} | `Decode Base64 Captcha`             | path/to/captcha/image |</shortdoc>
+</kw>
+<kw name="Decode Qr Image" source="C:\Users\mani3359\AppData\Local\Programs\Python\Python37\Lib\site-packages\CaptchaLibrary\utils\EncDec.py" lineno="61">
+<arguments repr="imagepath">
+<arg kind="POSITIONAL_OR_NAMED" required="true" repr="imagepath">
+<name>imagepath</name>
+</arg>
+</arguments>
+<doc>Decodes the given QR Image. Returns an object type variable.</doc>
+<shortdoc>Decodes the given QR Image. Returns an object type variable.</shortdoc>
+</kw>
+<kw name="Get Bypass Captcha Token" source="C:\Users\mani3359\AppData\Local\Programs\Python\Python37\Lib\site-packages\CaptchaLibrary\CaptchaLibrary.py" lineno="76">
+<arguments repr="baseURL, header={'Accept': 'application/json'}">
+<arg kind="POSITIONAL_OR_NAMED" required="true" repr="baseURL">
+<name>baseURL</name>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="false" repr="header={'Accept': 'application/json'}">
+<name>header</name>
+<default>{'Accept': 'application/json'}</default>
+</arg>
+</arguments>
+<doc>Sends a GET Request to the base URL to retrieve the token to be
+used to bypass the captcha.</doc>
+<shortdoc>Sends a GET Request to the base URL to retrieve the token to be used to bypass the captcha.</shortdoc>
+</kw>
+<kw name="Tc Simplecaptcha Solve" source="C:\Users\mani3359\AppData\Local\Programs\Python\Python37\Lib\site-packages\CaptchaLibrary\services\twocaptcha\SimpleCaptcha.py" lineno="48">
+<arguments repr="imagepath">
+<arg kind="POSITIONAL_OR_NAMED" required="true" repr="imagepath">
+<name>imagepath</name>
+</arg>
+</arguments>
+<doc/>
+<shortdoc/>
+</kw>
+</keywords>
+<datatypes>
+</datatypes>
+<typedocs>
+</typedocs>
+</keywordspec>

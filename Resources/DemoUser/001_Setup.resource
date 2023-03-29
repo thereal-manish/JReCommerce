@@ -18,6 +18,7 @@ enter generated details in signup form
     commons.Input Text    ${passwordlocator}    ${password}
     commons.Input Text    ${password2locator}    ${password}
     Radio Button Should Be Set To    newsletter    0
+    
     commons.Click Element    ${terms}
     commons.Click Element    ${continuebtn}
     Wait Until Page Contains Element    ${logoutelement}   
@@ -25,3 +26,10 @@ enter generated details in signup form
     
 teardown
     logout and close for user
+    
+verify alert
+    commons.Input Text    ${emaillocator}    ${email}
+    commons.Input Text    ${passwordlocator}    ${passwordInvalid}
+    commons.Click Element    ${custloginbtn}
+    Page Should Contain Element    ${danger} 
+    
