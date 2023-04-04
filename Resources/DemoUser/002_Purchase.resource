@@ -54,6 +54,8 @@ proceed checkout
     commons.Click Element    ${checkoutbtn}  
     
 fill address
+    Select Radio Button    ${address_group}    ${address_value}
+    Radio Button Should Be Set To    ${address_group}    ${address_value}
     commons.Input Text    ${firstnamelocator}        ${firstname}
     commons.Input Text    ${lastnamelocator}        ${lastname}
     commons.Input Text    ${address1locator}        ${address1}

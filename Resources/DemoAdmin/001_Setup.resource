@@ -36,14 +36,14 @@ verify categories
     commons.Click Element    ${admin_catalog}
     commons.Click Element    ${admin_categories}
     
-    @{categoriesFromAdminPanelPage1}=    Create List    Diamond rings    Diamond rings\u00a0\u00a0>\u00a0\u00a0Men's    Diamond rings\u00a0\u00a0>\u00a0\u00a0Men's\u00a0\u00a0>\u00a0\u00a0Shoes    Diamond rings\u00a0\u00a0>\u00a0\u00a0Women's    Examples    Kids    Kids\u00a0\u00a0>\u00a0\u00a0Accessories    Kids\u00a0\u00a0>\u00a0\u00a0Fashion    Kids\u00a0\u00a0>\u00a0\u00a0Toys & Games    Men    Men\u00a0\u00a0>\u00a0\u00a0Accessories    Men\u00a0\u00a0>\u00a0\u00a0Fashion    	Men\u00a0\u00a0>\u00a0\u00a0Jewelry    Women    Women\u00a0\u00a0>\u00a0\u00a0Accessories    Women\u00a0\u00a0>\u00a0\u00a0Fashion    Women\u00a0\u00a0>\u00a0\u00a0Fashion\u00a0\u00a0>\u00a0\u00a0Kurti    Women\u00a0\u00a0>\u00a0\u00a0Fashion\u00a0\u00a0>\u00a0\u00a0Lehenga    Women\u00a0\u00a0>\u00a0\u00a0Fashion\u00a0\u00a0>\u00a0\u00a0Saree    Women\u00a0\u00a0>\u00a0\u00a0Jewelry
+    @{categoriesFromAdminPanelPage1}=    Create List    Examples    Footwear    Footwear\u00a0\u00a0>\u00a0\u00a0Men's    Footwear\u00a0\u00a0>\u00a0\u00a0Men's\u00a0\u00a0>\u00a0\u00a0Shoes    
     custompyLibrary.compareItemsText.Compare Items In Admin Panel Text    ${categoriesFromAdminPanelPage1}
     
 verify products across all page
     commons.Click Element    ${admin_catalog}
     commons.Click Element    ${admin_products}
-    @{allProducts}=    Create List    	Boys Kurta Pajama    Girls Lehenga Choli   Jewelry    The Lyra Pendant    Wholesale Product (Read description below)	
-    ${values}=    create list    56    50   48    61    28
+    @{allProducts}=    Create List    	Boys Kurta Pajama    The Lyra Pendant
+    ${values}=    create list    57    61 
     ExperimentalLibrary.iteratePage.Iterate Through Values    ${allProducts}    ${values}
     commons.Click Element    ${deletebtn}
     Handle Alert    ACCEPT

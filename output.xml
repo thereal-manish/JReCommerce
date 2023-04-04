@@ -1,0 +1,1237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.5 on win32)" generated="20230404 16:21:01.033" rpa="false">
+<suite id="s1" name="JReCommerce" source="C:\Users\mani3359\eclipse-workspace\JReCommerce">
+<suite id="s1-s1" name="Tests" source="C:\Users\mani3359\eclipse-workspace\JReCommerce\Tests">
+<suite id="s1-s1-s1" name="001 DemoUser" source="C:\Users\mani3359\eclipse-workspace\JReCommerce\Tests\001_DemoUser">
+<suite id="s1-s1-s1-s1" name="001 Setup" source="C:\Users\mani3359\eclipse-workspace\JReCommerce\Tests\001_DemoUser\001_Setup.robot">
+<test id="s1-s1-s1-s1-t1" name="User registration [faker only]">
+<kw name="generate new data with faker library" library="commons">
+<kw name="Name Nonbinary" library="FakerLibrary">
+<assign>
+<var>${displayname}</var>
+</assign>
+<msg timestamp="20230404 16:21:02.141" level="INFO">${displayname} = Theresa Roth</msg>
+<status status="PASS" starttime="20230404 16:21:02.140" endtime="20230404 16:21:02.141"></status>
+</kw>
+<kw name="First Name" library="FakerLibrary">
+<assign>
+<var>${firstname}</var>
+</assign>
+<msg timestamp="20230404 16:21:02.143" level="INFO">${firstname} = John</msg>
+<status status="PASS" starttime="20230404 16:21:02.142" endtime="20230404 16:21:02.143"></status>
+</kw>
+<kw name="Last Name" library="FakerLibrary">
+<assign>
+<var>${lastname}</var>
+</assign>
+<msg timestamp="20230404 16:21:02.144" level="INFO">${lastname} = Nielsen</msg>
+<status status="PASS" starttime="20230404 16:21:02.143" endtime="20230404 16:21:02.144"></status>
+</kw>
+<kw name="Email" library="FakerLibrary">
+<assign>
+<var>${email}</var>
+</assign>
+<msg timestamp="20230404 16:21:02.146" level="INFO">${email} = joshua30@example.net</msg>
+<status status="PASS" starttime="20230404 16:21:02.145" endtime="20230404 16:21:02.146"></status>
+</kw>
+<kw name="Phone Number" library="FakerLibrary">
+<assign>
+<var>${phone}</var>
+</assign>
+<msg timestamp="20230404 16:21:02.147" level="INFO">${phone} = +1-510-205-8060x3903</msg>
+<status status="PASS" starttime="20230404 16:21:02.146" endtime="20230404 16:21:02.147"></status>
+</kw>
+<kw name="Password" library="FakerLibrary">
+<doc>Generate a random password of the specified ``length``.</doc>
+<assign>
+<var>${password}</var>
+</assign>
+<msg timestamp="20230404 16:21:02.148" level="INFO">${password} = ZOi7M7w3V$</msg>
+<status status="PASS" starttime="20230404 16:21:02.148" endtime="20230404 16:21:02.148"></status>
+</kw>
+<kw name="Text" library="FakerLibrary">
+<doc>Generate a text string.</doc>
+<assign>
+<var>${description}</var>
+</assign>
+<msg timestamp="20230404 16:21:02.149" level="INFO">${description} = Size approach man song. Anything issue company them ball society. Ability call white win really.
+Trade bill reality. Well region south Congress where travel pick.</msg>
+<status status="PASS" starttime="20230404 16:21:02.149" endtime="20230404 16:21:02.149"></status>
+</kw>
+<kw name="Random Letters" library="FakerLibrary">
+<doc>Generate a list of random ASCII letters (a-z and A-Z) of the specified ``length``.</doc>
+<assign>
+<var>${productname}</var>
+</assign>
+<msg timestamp="20230404 16:21:02.150" level="INFO">${productname} = ['T', 'U', 'T', 'E', 'S', 'B', 'd', 'B', 'G', 'w', 'y', 'v', 'N', 'h', 'Q', 'v']</msg>
+<status status="PASS" starttime="20230404 16:21:02.150" endtime="20230404 16:21:02.150"></status>
+</kw>
+<kw name="Paragraph" library="FakerLibrary">
+<doc>Generate a paragraph.</doc>
+<assign>
+<var>${metatitle}</var>
+</assign>
+<msg timestamp="20230404 16:21:02.151" level="INFO">${metatitle} = Against agreement common hear science need. Current after response statement body them. Five kitchen discussion loss specific as successful.</msg>
+<status status="PASS" starttime="20230404 16:21:02.151" endtime="20230404 16:21:02.151"></status>
+</kw>
+<kw name="Random Digit Not Null" library="FakerLibrary">
+<doc>Generate a random non-zero digit (1 to 9).</doc>
+<assign>
+<var>${model}</var>
+</assign>
+<msg timestamp="20230404 16:21:02.152" level="INFO">${model} = 2</msg>
+<status status="PASS" starttime="20230404 16:21:02.152" endtime="20230404 16:21:02.152"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${description}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:02.153" level="INFO">${description} = Size approach man song. Anything issue company them ball society. Ability call white win really.
+Trade bill reality. Well region south Congress where travel pick.</msg>
+<status status="PASS" starttime="20230404 16:21:02.153" endtime="20230404 16:21:02.153"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${displayname}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:02.154" level="INFO">${displayname} = Theresa Roth</msg>
+<status status="PASS" starttime="20230404 16:21:02.154" endtime="20230404 16:21:02.154"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${firstname}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:02.155" level="INFO">${firstname} = John</msg>
+<status status="PASS" starttime="20230404 16:21:02.155" endtime="20230404 16:21:02.155"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${lastname}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:02.157" level="INFO">${lastname} = Nielsen</msg>
+<status status="PASS" starttime="20230404 16:21:02.156" endtime="20230404 16:21:02.157"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:02.158" level="INFO">${email} = joshua30@example.net</msg>
+<status status="PASS" starttime="20230404 16:21:02.158" endtime="20230404 16:21:02.158"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${phone}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:02.159" level="INFO">${phone} = +1-510-205-8060x3903</msg>
+<status status="PASS" starttime="20230404 16:21:02.158" endtime="20230404 16:21:02.159"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:02.160" level="INFO">${password} = ZOi7M7w3V$</msg>
+<status status="PASS" starttime="20230404 16:21:02.159" endtime="20230404 16:21:02.160"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${productname}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:02.161" level="INFO">${productname} = ['T', 'U', 'T', 'E', 'S', 'B', 'd', 'B', 'G', 'w', 'y', 'v', 'N', 'h', 'Q', 'v']</msg>
+<status status="PASS" starttime="20230404 16:21:02.160" endtime="20230404 16:21:02.161"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${metatitle}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:02.161" level="INFO">${metatitle} = Against agreement common hear science need. Current after response statement body them. Five kitchen discussion loss specific as successful.</msg>
+<status status="PASS" starttime="20230404 16:21:02.161" endtime="20230404 16:21:02.162"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${model}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:02.162" level="INFO">${model} = 2</msg>
+<status status="PASS" starttime="20230404 16:21:02.162" endtime="20230404 16:21:02.162"></status>
+</kw>
+<status status="PASS" starttime="20230404 16:21:02.138" endtime="20230404 16:21:02.163"></status>
+</kw>
+<status status="PASS" starttime="20230404 16:21:02.136" endtime="20230404 16:21:02.163" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-s1-t2" name="wrong credentials check">
+<kw name="setup the browser" library="commons">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
+<arg>sys, selenium.webdriver</arg>
+</arguments>
+<assign>
+<var>${options}</var>
+</assign>
+<msg timestamp="20230404 16:21:02.166" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000001D109E28688&gt;</msg>
+<status status="PASS" starttime="20230404 16:21:02.165" endtime="20230404 16:21:02.167"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-blink-features\=AutomationControlled</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:02.168" endtime="20230404 16:21:02.168"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-extensions</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:02.169" endtime="20230404 16:21:02.169"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${options}</arg>
+<arg>add_experimental_option</arg>
+<arg>useAutomationExtension</arg>
+<arg>${False}</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:02.170" endtime="20230404 16:21:02.170"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>enable-automation</arg>
+</arguments>
+<assign>
+<var>${excludeSwitches}</var>
+</assign>
+<msg timestamp="20230404 16:21:02.171" level="INFO">${excludeSwitches} = ['enable-automation']</msg>
+<status status="PASS" starttime="20230404 16:21:02.171" endtime="20230404 16:21:02.171"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${options}</arg>
+<arg>add_experimental_option</arg>
+<arg>excludeSwitches</arg>
+<arg>${excludeSwitches}</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:02.171" endtime="20230404 16:21:02.171"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--start-maximized</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:02.172" endtime="20230404 16:21:02.172"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--profile-directory\=Default</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:02.172" endtime="20230404 16:21:02.174"></status>
+</kw>
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<arguments>
+<arg>Chrome</arg>
+<arg>chrome_options=${options}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:02.175" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20230404 16:21:02.174" endtime="20230404 16:21:05.811"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:05.818" level="INFO">Opening url 'https://www.jrecommerce.com/demo.php'</msg>
+<status status="PASS" starttime="20230404 16:21:05.813" endtime="20230404 16:21:08.499"></status>
+</kw>
+<status status="PASS" starttime="20230404 16:21:02.165" endtime="20230404 16:21:08.499"></status>
+</kw>
+<kw name="Go to customer login/signup page of demo application" library="commons">
+<kw name="Click Element" library="commons">
+<arguments>
+<arg>${customerlogin}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:08.501" endtime="20230404 16:21:08.544"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:08.545" endtime="20230404 16:21:08.547"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls an element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:08.548" endtime="20230404 16:21:08.857"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:08.858" level="INFO">Clicking element 'xpath=//a[normalize-space()='Customer Login']'.</msg>
+<status status="PASS" starttime="20230404 16:21:08.858" endtime="20230404 16:21:08.993"></status>
+</kw>
+<status status="PASS" starttime="20230404 16:21:08.501" endtime="20230404 16:21:08.994"></status>
+</kw>
+<status status="PASS" starttime="20230404 16:21:08.500" endtime="20230404 16:21:08.994"></status>
+</kw>
+<kw name="Select Window" library="SeleniumLibrary">
+<doc>Selects browser window matching ``locator``.</doc>
+<arguments>
+<arg>NEW</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:08.995" endtime="20230404 16:21:09.011"></status>
+</kw>
+<kw name="verify alert" library="001_Setup">
+<kw name="Input Text" library="commons">
+<arguments>
+<arg>${emaillocator}</arg>
+<arg>${email}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:09.013" endtime="20230404 16:21:11.634"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls an element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:11.635" endtime="20230404 16:21:11.912"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:11.913" level="INFO">Typing text 'joshua30@example.net' into text field 'xpath=//input[@id='input-email']'.</msg>
+<status status="PASS" starttime="20230404 16:21:11.912" endtime="20230404 16:21:12.042"></status>
+</kw>
+<status status="PASS" starttime="20230404 16:21:09.012" endtime="20230404 16:21:12.043"></status>
+</kw>
+<kw name="Input Text" library="commons">
+<arguments>
+<arg>${passwordlocator}</arg>
+<arg>${passwordInvalid}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:12.044" endtime="20230404 16:21:12.070"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls an element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:12.070" endtime="20230404 16:21:12.348"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:12.349" level="INFO">Typing text 'xxxxxxxxxx' into text field 'xpath=//input[@id='input-password']'.</msg>
+<status status="PASS" starttime="20230404 16:21:12.349" endtime="20230404 16:21:12.469"></status>
+</kw>
+<status status="PASS" starttime="20230404 16:21:12.044" endtime="20230404 16:21:12.470"></status>
+</kw>
+<kw name="Click Element" library="commons">
+<arguments>
+<arg>${custloginbtn}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:12.473" endtime="20230404 16:21:12.502"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:12.502" endtime="20230404 16:21:12.504"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls an element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:12.504" endtime="20230404 16:21:12.784"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:12.785" level="INFO">Clicking element '//input[@value='Login']'.</msg>
+<status status="PASS" starttime="20230404 16:21:12.784" endtime="20230404 16:21:13.452"></status>
+</kw>
+<status status="PASS" starttime="20230404 16:21:12.471" endtime="20230404 16:21:13.453"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${danger}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:13.494" level="INFO">Current page contains element '//div[@class='alert alert-danger alert-dismissible']'.</msg>
+<status status="PASS" starttime="20230404 16:21:13.453" endtime="20230404 16:21:13.495"></status>
+</kw>
+<status status="PASS" starttime="20230404 16:21:09.012" endtime="20230404 16:21:13.497"></status>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20230404 16:21:13.498" endtime="20230404 16:21:15.757"></status>
+</kw>
+<status status="PASS" starttime="20230404 16:21:02.163" endtime="20230404 16:21:15.758" critical="yes"></status>
+</test>
+<doc>This module is to test the demo user page of JR eCommerce page</doc>
+<status status="PASS" starttime="20230404 16:21:01.164" endtime="20230404 16:21:15.759"></status>
+</suite>
+<suite id="s1-s1-s1-s2" name="002 Purchase" source="C:\Users\mani3359\eclipse-workspace\JReCommerce\Tests\001_DemoUser\002_Purchase.robot">
+<test id="s1-s1-s1-s2-t1" name="Add dress into cart">
+<kw name="Test Setup testcase for user" library="commons" type="setup">
+<kw name="setup the browser" library="commons">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
+<arg>sys, selenium.webdriver</arg>
+</arguments>
+<assign>
+<var>${options}</var>
+</assign>
+<msg timestamp="20230404 16:21:15.874" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000001D10A0553C8&gt;</msg>
+<status status="PASS" starttime="20230404 16:21:15.873" endtime="20230404 16:21:15.875"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-blink-features\=AutomationControlled</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:15.875" endtime="20230404 16:21:15.876"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-extensions</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:15.876" endtime="20230404 16:21:15.877"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${options}</arg>
+<arg>add_experimental_option</arg>
+<arg>useAutomationExtension</arg>
+<arg>${False}</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:15.877" endtime="20230404 16:21:15.877"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>enable-automation</arg>
+</arguments>
+<assign>
+<var>${excludeSwitches}</var>
+</assign>
+<msg timestamp="20230404 16:21:15.878" level="INFO">${excludeSwitches} = ['enable-automation']</msg>
+<status status="PASS" starttime="20230404 16:21:15.877" endtime="20230404 16:21:15.878"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${options}</arg>
+<arg>add_experimental_option</arg>
+<arg>excludeSwitches</arg>
+<arg>${excludeSwitches}</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:15.878" endtime="20230404 16:21:15.878"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--start-maximized</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:15.879" endtime="20230404 16:21:15.879"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--profile-directory\=Default</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:15.879" endtime="20230404 16:21:15.880"></status>
+</kw>
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<arguments>
+<arg>Chrome</arg>
+<arg>chrome_options=${options}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:15.881" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20230404 16:21:15.880" endtime="20230404 16:21:17.177"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:17.178" level="INFO">Opening url 'https://www.jrecommerce.com/demo.php'</msg>
+<status status="PASS" starttime="20230404 16:21:17.177" endtime="20230404 16:21:18.562"></status>
+</kw>
+<status status="PASS" starttime="20230404 16:21:15.872" endtime="20230404 16:21:18.563"></status>
+</kw>
+<kw name="Go to customer login/signup page of demo application" library="commons">
+<kw name="Click Element" library="commons">
+<arguments>
+<arg>${customerlogin}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:18.564" endtime="20230404 16:21:18.596"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:18.596" endtime="20230404 16:21:18.598"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls an element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:18.599" endtime="20230404 16:21:18.882"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:18.883" level="INFO">Clicking element 'xpath=//a[normalize-space()='Customer Login']'.</msg>
+<status status="PASS" starttime="20230404 16:21:18.883" endtime="20230404 16:21:19.013"></status>
+</kw>
+<status status="PASS" starttime="20230404 16:21:18.564" endtime="20230404 16:21:19.013"></status>
+</kw>
+<status status="PASS" starttime="20230404 16:21:18.563" endtime="20230404 16:21:19.014"></status>
+</kw>
+<kw name="Select Window" library="SeleniumLibrary">
+<doc>Selects browser window matching ``locator``.</doc>
+<arguments>
+<arg>NEW</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:19.015" endtime="20230404 16:21:19.031"></status>
+</kw>
+<kw name="Input Text" library="commons">
+<arguments>
+<arg>${emaillocator}</arg>
+<arg>${email_manual}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:19.032" endtime="20230404 16:21:21.110"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls an element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:21.110" endtime="20230404 16:21:21.405"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:21.406" level="INFO">Typing text 'demouser@demo.com' into text field 'xpath=//input[@id='input-email']'.</msg>
+<status status="PASS" starttime="20230404 16:21:21.406" endtime="20230404 16:21:21.538"></status>
+</kw>
+<status status="PASS" starttime="20230404 16:21:19.031" endtime="20230404 16:21:21.539"></status>
+</kw>
+<kw name="Input Text" library="commons">
+<arguments>
+<arg>${passwordlocator}</arg>
+<arg>${password_manual}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:21.541" endtime="20230404 16:21:21.574"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls an element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:21.576" endtime="20230404 16:21:21.876"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:21.879" level="INFO">Typing text 'demopass' into text field 'xpath=//input[@id='input-password']'.</msg>
+<status status="PASS" starttime="20230404 16:21:21.878" endtime="20230404 16:21:22.000"></status>
+</kw>
+<status status="PASS" starttime="20230404 16:21:21.540" endtime="20230404 16:21:22.001"></status>
+</kw>
+<kw name="Click Element" library="commons">
+<arguments>
+<arg>${loginbtn}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:22.002" endtime="20230404 16:21:22.031"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:22.031" endtime="20230404 16:21:22.033"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls an element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:22.033" endtime="20230404 16:21:22.311"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:22.311" level="INFO">Clicking element 'xpath=//input[@value='Login']'.</msg>
+<status status="PASS" starttime="20230404 16:21:22.311" endtime="20230404 16:21:24.113"></status>
+</kw>
+<status status="PASS" starttime="20230404 16:21:22.002" endtime="20230404 16:21:24.114"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>${logoutelement}</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:24.114" endtime="20230404 16:21:24.131"></status>
+</kw>
+<status status="PASS" starttime="20230404 16:21:15.870" endtime="20230404 16:21:24.131"></status>
+</kw>
+<kw name="go to homepage" library="002_Purchase">
+<kw name="Click Element" library="commons">
+<arguments>
+<arg>${homepageelement}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:24.133" endtime="20230404 16:21:24.159"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:24.159" endtime="20230404 16:21:24.161"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls an element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:24.162" endtime="20230404 16:21:24.443"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:24.444" level="INFO">Clicking element 'css:.fa.fa-home'.</msg>
+<status status="PASS" starttime="20230404 16:21:24.443" endtime="20230404 16:21:30.458"></status>
+</kw>
+<status status="PASS" starttime="20230404 16:21:24.133" endtime="20230404 16:21:30.459"></status>
+</kw>
+<status status="PASS" starttime="20230404 16:21:24.132" endtime="20230404 16:21:30.461"></status>
+</kw>
+<kw name="go to women's card" library="002_Purchase">
+<kw name="Click Element" library="commons">
+<arguments>
+<arg>${womenscard}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:30.463" endtime="20230404 16:21:30.495"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:30.495" endtime="20230404 16:21:30.498"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls an element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:30.499" endtime="20230404 16:21:30.782"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:30.783" level="INFO">Clicking element '//div[@class='owl-item active']//h5//a[contains(text(),'Women')]'.</msg>
+<status status="PASS" starttime="20230404 16:21:30.782" endtime="20230404 16:21:34.612"></status>
+</kw>
+<status status="PASS" starttime="20230404 16:21:30.463" endtime="20230404 16:21:34.613"></status>
+</kw>
+<status status="PASS" starttime="20230404 16:21:30.462" endtime="20230404 16:21:34.614"></status>
+</kw>
+<kw name="get card titles" library="002_Purchase">
+<kw name="Get WebElements" library="SeleniumLibrary">
+<doc>Returns list of WebElement objects matching the ``locator``.</doc>
+<arguments>
+<arg>${cardtitle}</arg>
+</arguments>
+<assign>
+<var>${titles_from_page}</var>
+</assign>
+<msg timestamp="20230404 16:21:34.632" level="INFO">${titles_from_page} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="e35e74e363318b6fc02e2cc8ff3d0a52", element="46a6708f-b6f0-40d6-90fd-2c3751e4387a")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20230404 16:21:34.616" endtime="20230404 16:21:34.633"></status>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<assign>
+<var>@{actual_list}</var>
+</assign>
+<msg timestamp="20230404 16:21:34.634" level="INFO">@{actual_list} = [ ]</msg>
+<status status="PASS" starttime="20230404 16:21:34.633" endtime="20230404 16:21:34.634"></status>
+</kw>
+<kw name="${element} IN [ @{titles_from_page} ]" type="for">
+<kw name="${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;e35e74e363318b6fc02e2cc8ff3d0a52&quot;, element=&quot;46a6708f-b6f0-40d6-90fd-2c3751e4387a&quot;)&gt;" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${element.text}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:34.661" level="INFO">Blue Diamond Ring</msg>
+<status status="PASS" starttime="20230404 16:21:34.635" endtime="20230404 16:21:34.661"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${actual_list}</arg>
+<arg>${element.text}</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:34.662" endtime="20230404 16:21:34.674"></status>
+</kw>
+<status status="PASS" starttime="20230404 16:21:34.635" endtime="20230404 16:21:34.675"></status>
+</kw>
+<kw name="${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;e35e74e363318b6fc02e2cc8ff3d0a52&quot;, element=&quot;50314123-3245-4645-9ab3-52707b971279&quot;)&gt;" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${element.text}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:34.700" level="INFO">Boys Kurta Pajama</msg>
+<status status="PASS" starttime="20230404 16:21:34.675" endtime="20230404 16:21:34.701"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${actual_list}</arg>
+<arg>${element.text}</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:34.702" endtime="20230404 16:21:34.717"></status>
+</kw>
+<status status="PASS" starttime="20230404 16:21:34.675" endtime="20230404 16:21:34.717"></status>
+</kw>
+<kw name="${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;e35e74e363318b6fc02e2cc8ff3d0a52&quot;, element=&quot;a20116e3-5ee8-4f7a-9f00-60ee570b2afe&quot;)&gt;" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${element.text}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:34.734" level="INFO">Boys Kurta Pajama</msg>
+<status status="PASS" starttime="20230404 16:21:34.718" endtime="20230404 16:21:34.734"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${actual_list}</arg>
+<arg>${element.text}</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:34.735" endtime="20230404 16:21:34.748"></status>
+</kw>
+<status status="PASS" starttime="20230404 16:21:34.718" endtime="20230404 16:21:34.748"></status>
+</kw>
+<kw name="${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;e35e74e363318b6fc02e2cc8ff3d0a52&quot;, element=&quot;6d561b94-7936-4815-a468-c659c58b29bb&quot;)&gt;" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${element.text}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:34.766" level="INFO">Boys Kurta Pajama</msg>
+<status status="PASS" starttime="20230404 16:21:34.749" endtime="20230404 16:21:34.766"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${actual_list}</arg>
+<arg>${element.text}</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:34.767" endtime="20230404 16:21:34.776"></status>
+</kw>
+<status status="PASS" starttime="20230404 16:21:34.749" endtime="20230404 16:21:34.776"></status>
+</kw>
+<kw name="${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;e35e74e363318b6fc02e2cc8ff3d0a52&quot;, element=&quot;3104c53d-f5f9-4b61-a929-538f96ece689&quot;)&gt;" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${element.text}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:34.796" level="INFO">Boys Kurta Pajama लड़कों का कुर्ता सेट</msg>
+<status status="PASS" starttime="20230404 16:21:34.777" endtime="20230404 16:21:34.796"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${actual_list}</arg>
+<arg>${element.text}</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:34.797" endtime="20230404 16:21:34.808"></status>
+</kw>
+<status status="PASS" starttime="20230404 16:21:34.777" endtime="20230404 16:21:34.808"></status>
+</kw>
+<kw name="${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;e35e74e363318b6fc02e2cc8ff3d0a52&quot;, element=&quot;3d1a6bc7-783d-4b2f-831f-30d70ed6d129&quot;)&gt;" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${element.text}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:34.831" level="INFO">Girls Lehenga Choli</msg>
+<status status="PASS" starttime="20230404 16:21:34.809" endtime="20230404 16:21:34.831"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${actual_list}</arg>
+<arg>${element.text}</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:34.832" endtime="20230404 16:21:34.842"></status>
+</kw>
+<status status="PASS" starttime="20230404 16:21:34.808" endtime="20230404 16:21:34.843"></status>
+</kw>
+<kw name="${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;e35e74e363318b6fc02e2cc8ff3d0a52&quot;, element=&quot;f3512303-398c-4dec-82cb-72bfb4337f1f&quot;)&gt;" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${element.text}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:34.859" level="INFO">Girls Lehenga Choli</msg>
+<status status="PASS" starttime="20230404 16:21:34.843" endtime="20230404 16:21:34.859"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${actual_list}</arg>
+<arg>${element.text}</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:34.860" endtime="20230404 16:21:34.869"></status>
+</kw>
+<status status="PASS" starttime="20230404 16:21:34.843" endtime="20230404 16:21:34.869"></status>
+</kw>
+<kw name="${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;e35e74e363318b6fc02e2cc8ff3d0a52&quot;, element=&quot;cc1b2b4e-34af-47ac-8ea0-dc032cd1bbf0&quot;)&gt;" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${element.text}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:34.885" level="INFO">Girls Lehenga Choli</msg>
+<status status="PASS" starttime="20230404 16:21:34.870" endtime="20230404 16:21:34.885"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${actual_list}</arg>
+<arg>${element.text}</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:34.886" endtime="20230404 16:21:34.894"></status>
+</kw>
+<status status="PASS" starttime="20230404 16:21:34.869" endtime="20230404 16:21:34.894"></status>
+</kw>
+<kw name="${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;e35e74e363318b6fc02e2cc8ff3d0a52&quot;, element=&quot;39442eae-24f4-4603-b78b-c8e41be5a333&quot;)&gt;" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${element.text}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:34.911" level="INFO">Girls Lehenga Choli</msg>
+<status status="PASS" starttime="20230404 16:21:34.895" endtime="20230404 16:21:34.912"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${actual_list}</arg>
+<arg>${element.text}</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:34.912" endtime="20230404 16:21:34.921"></status>
+</kw>
+<status status="PASS" starttime="20230404 16:21:34.895" endtime="20230404 16:21:34.921"></status>
+</kw>
+<kw name="${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;e35e74e363318b6fc02e2cc8ff3d0a52&quot;, element=&quot;c32f97c6-b726-4906-85bd-c66c31448526&quot;)&gt;" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${element.text}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:34.934" level="INFO">Girls Lehenga Choli</msg>
+<status status="PASS" starttime="20230404 16:21:34.922" endtime="20230404 16:21:34.935"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${actual_list}</arg>
+<arg>${element.text}</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:34.935" endtime="20230404 16:21:34.947"></status>
+</kw>
+<status status="PASS" starttime="20230404 16:21:34.922" endtime="20230404 16:21:34.947"></status>
+</kw>
+<kw name="${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;e35e74e363318b6fc02e2cc8ff3d0a52&quot;, element=&quot;56ea2378-84c6-412b-9212-98876f616c3b&quot;)&gt;" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${element.text}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:34.966" level="INFO">Girls Lehenga Choli</msg>
+<status status="PASS" starttime="20230404 16:21:34.949" endtime="20230404 16:21:34.966"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${actual_list}</arg>
+<arg>${element.text}</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:34.967" endtime="20230404 16:21:34.978"></status>
+</kw>
+<status status="PASS" starttime="20230404 16:21:34.947" endtime="20230404 16:21:34.978"></status>
+</kw>
+<kw name="${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;e35e74e363318b6fc02e2cc8ff3d0a52&quot;, element=&quot;ab4d4e0c-3acd-45d9-beb6-60cbff2d9da9&quot;)&gt;" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${element.text}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:34.992" level="INFO">The Lyra Pendant</msg>
+<status status="PASS" starttime="20230404 16:21:34.979" endtime="20230404 16:21:34.992"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${actual_list}</arg>
+<arg>${element.text}</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:34.992" endtime="20230404 16:21:35.001"></status>
+</kw>
+<status status="PASS" starttime="20230404 16:21:34.978" endtime="20230404 16:21:35.001"></status>
+</kw>
+<kw name="${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;e35e74e363318b6fc02e2cc8ff3d0a52&quot;, element=&quot;f9c3dd35-1110-4b76-8e58-1e9a91d4c97f&quot;)&gt;" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${element.text}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:35.016" level="INFO">The Twisted Heart Pendant</msg>
+<status status="PASS" starttime="20230404 16:21:35.002" endtime="20230404 16:21:35.016"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${actual_list}</arg>
+<arg>${element.text}</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:35.016" endtime="20230404 16:21:35.026"></status>
+</kw>
+<status status="PASS" starttime="20230404 16:21:35.002" endtime="20230404 16:21:35.026"></status>
+</kw>
+<kw name="${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;e35e74e363318b6fc02e2cc8ff3d0a52&quot;, element=&quot;142a57b9-e8c8-40b3-848b-3e99370b5b5f&quot;)&gt;" type="foritem">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${element.text}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:35.041" level="INFO">The Yana Pendant</msg>
+<status status="PASS" starttime="20230404 16:21:35.027" endtime="20230404 16:21:35.042"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${actual_list}</arg>
+<arg>${element.text}</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:35.042" endtime="20230404 16:21:35.050"></status>
+</kw>
+<status status="PASS" starttime="20230404 16:21:35.026" endtime="20230404 16:21:35.050"></status>
+</kw>
+<status status="PASS" starttime="20230404 16:21:34.634" endtime="20230404 16:21:35.050"></status>
+</kw>
+<status status="PASS" starttime="20230404 16:21:34.615" endtime="20230404 16:21:35.051"></status>
+</kw>
+<kw name="add items to cart" library="002_Purchase">
+<kw name="Create List" library="BuiltIn">
+<doc>Returns a list containing given items.</doc>
+<arguments>
+<arg>The Twisted Heart Pendant</arg>
+<arg>The Lyra Pendant</arg>
+</arguments>
+<assign>
+<var>@{items_to_add}</var>
+</assign>
+<msg timestamp="20230404 16:21:35.053" level="INFO">@{items_to_add} = [ The Twisted Heart Pendant | The Lyra Pendant ]</msg>
+<status status="PASS" starttime="20230404 16:21:35.052" endtime="20230404 16:21:35.054"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${items_to_add}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:35.056" level="INFO">${items_to_add} = ['The Twisted Heart Pendant', 'The Lyra Pendant']</msg>
+<status status="PASS" starttime="20230404 16:21:35.055" endtime="20230404 16:21:35.057"></status>
+</kw>
+<kw name="Add Items Into Cart" library="custompyLibrary.addItems">
+<arguments>
+<arg>${items_to_add}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:35.173" level="INFO">Clicking element 'xpath=(//span[contains(text(),'add to cart')])[12]'.</msg>
+<msg timestamp="20230404 16:21:35.249" level="INFO">Clicking element 'css:.close'.</msg>
+<msg timestamp="20230404 16:21:35.568" level="INFO">Clicking element 'xpath=(//span[contains(text(),'add to cart')])[13]'.</msg>
+<msg timestamp="20230404 16:21:35.721" level="INFO">Clicking element 'css:.close'.</msg>
+<status status="PASS" starttime="20230404 16:21:35.057" endtime="20230404 16:21:36.074"></status>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is not visible.</doc>
+<arguments>
+<arg>${popup}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20230404 16:21:36.218" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.147)
+</msg>
+<status status="FAIL" starttime="20230404 16:21:36.085" endtime="20230404 16:21:36.219"></status>
+</kw>
+<msg timestamp="20230404 16:21:36.220" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.147)
+</msg>
+<msg timestamp="20230404 16:21:36.270" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.147)
+</msg>
+<status status="FAIL" starttime="20230404 16:21:36.075" endtime="20230404 16:21:36.271"></status>
+</kw>
+<status status="FAIL" starttime="20230404 16:21:35.051" endtime="20230404 16:21:36.272"></status>
+</kw>
+<kw name="logout and close for user" library="commons" type="teardown">
+<kw name="Click Element" library="commons">
+<arguments>
+<arg>${logoutlogo}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20230404 16:21:36.288" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.147)
+</msg>
+<status status="FAIL" starttime="20230404 16:21:36.283" endtime="20230404 16:21:36.289"></status>
+</kw>
+<msg timestamp="20230404 16:21:36.290" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.147)
+</msg>
+<msg timestamp="20230404 16:21:36.295" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.147)
+</msg>
+<status status="FAIL" starttime="20230404 16:21:36.279" endtime="20230404 16:21:36.295"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:36.296" endtime="20230404 16:21:36.299"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls an element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20230404 16:21:36.310" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.147)
+</msg>
+<status status="FAIL" starttime="20230404 16:21:36.301" endtime="20230404 16:21:36.311"></status>
+</kw>
+<msg timestamp="20230404 16:21:36.311" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.147)
+</msg>
+<msg timestamp="20230404 16:21:36.332" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.147)
+</msg>
+<status status="FAIL" starttime="20230404 16:21:36.299" endtime="20230404 16:21:36.332"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20230404 16:21:36.333" level="INFO">Clicking element '//span[@id='cartme']'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20230404 16:21:36.342" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.147)
+</msg>
+<status status="FAIL" starttime="20230404 16:21:36.336" endtime="20230404 16:21:36.343"></status>
+</kw>
+<msg timestamp="20230404 16:21:36.343" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.147)
+</msg>
+<msg timestamp="20230404 16:21:36.345" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.147)
+</msg>
+<status status="FAIL" starttime="20230404 16:21:36.332" endtime="20230404 16:21:36.346"></status>
+</kw>
+<status status="FAIL" starttime="20230404 16:21:36.277" endtime="20230404 16:21:36.348"></status>
+</kw>
+<kw name="Click Element" library="commons">
+<arguments>
+<arg>${logoutbtn}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20230404 16:21:36.362" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.147)
+</msg>
+<status status="FAIL" starttime="20230404 16:21:36.355" endtime="20230404 16:21:36.363"></status>
+</kw>
+<msg timestamp="20230404 16:21:36.363" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.147)
+</msg>
+<msg timestamp="20230404 16:21:36.365" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.147)
+</msg>
+<status status="FAIL" starttime="20230404 16:21:36.350" endtime="20230404 16:21:36.366"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<status status="PASS" starttime="20230404 16:21:36.367" endtime="20230404 16:21:36.373"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls an element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20230404 16:21:36.379" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.147)
+</msg>
+<status status="FAIL" starttime="20230404 16:21:36.376" endtime="20230404 16:21:36.380"></status>
+</kw>
+<msg timestamp="20230404 16:21:36.380" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.147)

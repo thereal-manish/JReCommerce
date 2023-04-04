@@ -26,7 +26,7 @@ setup the browser
     ${excludeSwitches}=    Create List    enable-automation
     Call Method    ${options}    add_experimental_option    excludeSwitches    ${excludeSwitches}
     Call Method    ${options}    add_argument    --start-maximized
-    Call Method    ${options}    add_argument    --incognito
+    # Call Method    ${options}    add_argument    --incognito
     Call Method    ${options}    add_argument    --profile-directory\=Default
     
     # Call Method    ${options}    add_argument    --disable-web-security
@@ -66,8 +66,8 @@ Test Setup testcase for user
     setup the browser
     Go to customer login/signup page of demo application
     Select Window    NEW
-    commons.Input Text    ${emaillocator}    ${email}      
-    commons.Input Text    ${passwordlocator}    ${password}  
+    commons.Input Text    ${emaillocator}    ${email_manual}      
+    commons.Input Text    ${passwordlocator}    ${password_manual}  
     commons.Click Element    ${loginbtn}
     Wait Until Page Contains Element    ${logoutelement}    
 
@@ -84,8 +84,8 @@ Test setup for vendor
     setup the browser
     Go to vendor login/signup page
     select window    NEW
-    commons.Input Text    ${emaillocator}     ${email}
-    commons.Input Text    ${passwordlocator}    ${password}
+    commons.Input Text    ${emaillocator}     ${email_vendor_manual}
+    commons.Input Text    ${passwordlocator}    ${password_vendor_manual}
     commons.Click Element    ${loginbtn}
     
 test teardown for vendor

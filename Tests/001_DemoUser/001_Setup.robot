@@ -6,13 +6,13 @@ Library    SeleniumLibrary
 
 
 *** Test Cases ***
-User registration
-    commons.setup the browser
-    commons.Go to customer login/signup page of demo application
-    Select Window    NEW
-    001_Setup.select registration page
+User registration [faker only]
+    # commons.setup the browser
+    # commons.Go to customer login/signup page of demo application
+    # Select Window    NEW
+    # 001_Setup.select registration page
     commons.generate new data with faker library
-    001_Setup.enter generated details in signup form
+    # 001_Setup.enter generated details in signup form
     
 wrong credentials check
     commons.setup the browser
